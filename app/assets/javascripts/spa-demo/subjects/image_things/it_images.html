@@ -1,0 +1,9 @@
+<ul class="items images">
+	<li ng-repeat="item in $ctrl.images">
+		<a ng-click="$ctrl.updateImageId($index)">
+			<img ng-src="{{item.content_url}}?width=100"/>      
+	    <span class="id image_id">{{item.id}}</span>
+	    <span class="caption">{{item.caption}}</span>
+	  </a>
+	</li>
+</ul>
